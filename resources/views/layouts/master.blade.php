@@ -47,6 +47,69 @@
             text-shadow: 0 0 2px currentColor;
             transition: text-shadow 0.3s ease;
         }
+        
+        /* Hero Section Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        .animate-fade-up {
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .animate-slide-right {
+            animation: slideInRight 0.8s ease-out;
+        }
+        
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Custom bounce animation for icons */
+        @keyframes gentleBounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        .bounce {
+            animation: gentleBounce 1s ease-in-out infinite;
+        }
     </style>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
