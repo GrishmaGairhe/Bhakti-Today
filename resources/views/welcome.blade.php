@@ -1,6 +1,10 @@
 @extends('layouts.master')
 @section('content')
-    <div class="px-20 py-10">
+    <!-- Hero Section -->
+    <x-hero-section />
+    
+    <!-- Products Section -->
+    <div id="products" class="px-20 py-10">
         <div class="text-center mb-8 animate-fade-in">
             <h1 class="text-4xl font-bold text-yellow-400 mb-2">Latest Products</h1>
             <p class="text-gray-600 mb-4">Discover our latest spiritual products</p>
